@@ -1,2 +1,3 @@
-# tree-sitter-4dpreferences
-4D language support in Atom
+# 4D language support in Atom
+
+Adds syntax highlighting to ``.4dpreferences`` and ``.4dsettings``  files in Atom.
