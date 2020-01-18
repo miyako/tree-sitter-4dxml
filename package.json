@@ -1,0 +1,48 @@
+{
+  "name": "tree-sitter-4dxml",
+  "version": "0.0.0",
+  "description": "Atom language support for 4D",
+  "main": "index.js",
+  "scripts": {
+    "build": "tree-sitter generate && node-gyp build",
+    "test": "tree-sitter test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miyako/tree-sitter-4dxml.git"
+  },
+  "tree-sitter": [
+    {
+      "scope": "4dxml",
+      "file-types": [
+        "4dcatalog",
+        "4dlink",
+        "4dpreferences",
+        "4dsettings"
+      ]
+    }
+  ],
+  "keywords": [
+    "4D",
+    "ORDA",
+    "tree-sitter"
+  ],
+  "authors": [
+    "Max Brunsfeld <maxbrunsfeld@gmail.com>",
+    "Ashi Krishnan <queerviolet@github.com>",
+    "Keisuke Miyako <keisuke.miyako@4d.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miyako/tree-sitter-4dxml/issues"
+  },
+  "homepage": "https://github.com/miyako/tree-sitter-4dxml#readme",
+  "dependencies": {
+    "nan": "^2.14.0",
+    "node-gyp": "^6.1.0",
+    "tree-sitter": "^0.16.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.16.3"
+  }
+}

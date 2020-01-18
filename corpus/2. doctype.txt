@@ -1,0 +1,9 @@
+==================
+base
+==================
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+
+---
+
+(fragment   (declaration )  (text )  (doctype )  (text ))

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="" uuid="B12695EBE56B49F8B83912EB37AB4C0C" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Grocery" uuid="C09CD7363BBB44F98F67A430CBE226C6" id="1">
+		<field name="ID" uuid="CC1E7E558A6C43A799E6A78DA22130F3" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="image" uuid="71E5B47E74334652BB9276B78625DB11" type="12" never_null="true" id="2"/>
+		<field name="name" uuid="0A2A49F087A04C34B2E21C59051CCAC0" type="10" limiting_length="40" never_null="true" id="3"/>
+		<field name="message" uuid="3CB2DFED86B347A0A61EF8B53B74F944" type="10" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="CC1E7E558A6C43A799E6A78DA22130F3"/>
+		<table_extra output_form="List" input_form="Detail">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="83.7578125" top="107.51953125" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="CE1582BEBB5F4FCB8AC7B109CE5B77B5" type="7">
+		<field_ref uuid="CC1E7E558A6C43A799E6A78DA22130F3" name="ID">
+			<table_ref uuid="C09CD7363BBB44F98F67A430CBE226C6" name="Grocery"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:63.1.0" __keywordBuildingHash="icu:63.1.0"/>
+</base>
