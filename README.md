@@ -1,7 +1,7 @@
 # tree-sitter-4dxml
 4D language support in Atom
 
-A simple, generic XML parser, based in (tree-sitter-html)[https://github.com/tree-sitter/tree-sitter-html].
+A simple, generic XML parser, based on [tree-sitter-html](https://github.com/tree-sitter/tree-sitter-html).
 
 #### About
 
