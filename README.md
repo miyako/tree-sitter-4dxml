@@ -17,6 +17,6 @@ No integrity checking of element names or void tags vs self closing tags. ``tag.
 
 No special processing for ``script`` or ``style`` tags. ``scanner.cc``
 
-No injection for ``javascript`` or ``css``. 
+No injection of ``javascript`` or ``css``. 
 
 Implicit end tags are still allowed as in the original parser (not strict XML validation).
