@@ -19,4 +19,4 @@ No special processing for ``script`` or ``style`` tags. ``scanner.cc``
 
 No injection of ``javascript`` or ``css``. 
 
-Implicit end tags are still allowed as in the original parser (not strict XML validation).
+Implicit end tags are **allowed** as in the original parser (no strict XML validation).
