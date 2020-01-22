@@ -1,5 +1,5 @@
 module.exports = grammar({
-  name: 'fourdxmlpreferences',
+  name: 'fourdxml',
 
   extras: $ => [
     $.comment,

@@ -1618,17 +1618,17 @@ static TSParseActionEntry ts_parse_actions[] = {
   [212] = {.count = 1, .reusable = true}, SHIFT(63),
 };
 
-void *tree_sitter_fourdxmlpreferences_external_scanner_create(void);
-void tree_sitter_fourdxmlpreferences_external_scanner_destroy(void *);
-bool tree_sitter_fourdxmlpreferences_external_scanner_scan(void *, TSLexer *, const bool *);
-unsigned tree_sitter_fourdxmlpreferences_external_scanner_serialize(void *, char *);
-void tree_sitter_fourdxmlpreferences_external_scanner_deserialize(void *, const char *, unsigned);
+void *tree_sitter_fourdxml_external_scanner_create(void);
+void tree_sitter_fourdxml_external_scanner_destroy(void *);
+bool tree_sitter_fourdxml_external_scanner_scan(void *, TSLexer *, const bool *);
+unsigned tree_sitter_fourdxml_external_scanner_serialize(void *, char *);
+void tree_sitter_fourdxml_external_scanner_deserialize(void *, const char *, unsigned);
 
 #ifdef _WIN32
 #define extern __declspec(dllexport)
 #endif
 
-extern const TSLanguage *tree_sitter_fourdxmlpreferences(void) {
+extern const TSLanguage *tree_sitter_fourdxml(void) {
   static TSLanguage language = {
     .version = LANGUAGE_VERSION,
     .symbol_count = SYMBOL_COUNT,
@@ -1651,11 +1651,11 @@ extern const TSLanguage *tree_sitter_fourdxmlpreferences(void) {
     .external_scanner = {
       (const bool *)ts_external_scanner_states,
       ts_external_scanner_symbol_map,
-      tree_sitter_fourdxmlpreferences_external_scanner_create,
-      tree_sitter_fourdxmlpreferences_external_scanner_destroy,
-      tree_sitter_fourdxmlpreferences_external_scanner_scan,
-      tree_sitter_fourdxmlpreferences_external_scanner_serialize,
-      tree_sitter_fourdxmlpreferences_external_scanner_deserialize,
+      tree_sitter_fourdxml_external_scanner_create,
+      tree_sitter_fourdxml_external_scanner_destroy,
+      tree_sitter_fourdxml_external_scanner_scan,
+      tree_sitter_fourdxml_external_scanner_serialize,
+      tree_sitter_fourdxml_external_scanner_deserialize,
     },
   };
   return &language;

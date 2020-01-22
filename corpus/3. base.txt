@@ -1,0 +1,11 @@
+==================
+base
+==================
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="" uuid="B12695EBE56B49F8B83912EB37AB4C0C" collation_locale="en">
+</base>
+
+---
+
+(fragment   (declaration )  (text )  (doctype )  (text )  (element     (start_tag       (tag_name )      (attribute         (attribute_name )        (quoted_attribute_value ))      (attribute         (attribute_name )        (quoted_attribute_value           (attribute_value )))      (attribute         (attribute_name )        (quoted_attribute_value           (attribute_value ))))    (text )    (end_tag       (tag_name )))  (text ))

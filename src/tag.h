@@ -5,37 +5,11 @@ using std::string;
 using std::map;
 
 enum TagType {
-
-    WINDOW,
-    DATA_STORAGE,
-    GENERAL,
-    AUTOMATISMS,
-    NEW_DATABASES,
-    DOCUMENTATION,
-    MOVE,
-    DISPLAY,
-    COLOR,
-    STYLE,
-    OPTIONS,
-
+    
     END_OF_VOID_TAGS,
-    
-    /* base_core.dtd */
-
-    PREFERENCES,
-    INTERNAL_PREFS_4D,
-    WINDOWS,
+        
     COM_4D,
-    DATABASE,
-    FORM_EDITOR,
-    METHOD_EDITOR,
-    CLIENT_SERVER,
-    STRUCTURE,
-    APPLICATION,
-    MARKER,
-    SYNTAX_STYLE,
-    SYNTAX,
-    
+
     CUSTOM,
 };
 
@@ -43,34 +17,7 @@ enum TagType {
 static const map<string, TagType> get_tag_map() {
   map<string, TagType> result;
 #define TAG(name) result[#name] = name
-
-    /* base_core.dtd */
-    
-    TAG(WINDOW);
-    TAG(DATA_STORAGE);
-    TAG(GENERAL);
-    TAG(AUTOMATISMS);
-    TAG(NEW_DATABASES);
-    TAG(DOCUMENTATION);
-    TAG(MOVE);
-    TAG(DISPLAY);
-    TAG(COLOR);
-    TAG(STYLE);
-    TAG(OPTIONS);
-    TAG(PREFERENCES);
-    TAG(INTERNAL_PREFS_4D);
-    TAG(WINDOWS);
-
-    TAG(DATABASE);
-    TAG(FORM_EDITOR);
-    TAG(METHOD_EDITOR);
-    TAG(CLIENT_SERVER);
-    TAG(STRUCTURE);
-    TAG(APPLICATION);
-    TAG(MARKER);
-    TAG(SYNTAX_STYLE);
-    TAG(SYNTAX);
-    
+            
 #undef TAG
     
     result["com.4d"] = COM_4D;
