@@ -1,7 +1,7 @@
 # tree-sitter-4dxml
 4D language support in Atom
 
-A simple, generic XML parser, based in (tree-sitter-html)[https://github.com/tree-sitter/tree-sitter-html].
+A simple, generic XML parser, based on [tree-sitter-html](https://github.com/tree-sitter/tree-sitter-html).
 
 #### About
 
@@ -17,6 +17,6 @@ No integrity checking of element names or void tags vs self closing tags. ``tag.
 
 No special processing for ``script`` or ``style`` tags. ``scanner.cc``
 
-No injection for ``javascript`` or ``css``. 
+No injection of ``javascript`` or ``css``. 
 
-Implicit end tags are still allowed as in the original parser (not strict XML validation).
+Implicit end tags are **allowed** as in the original parser (no strict XML validation).
