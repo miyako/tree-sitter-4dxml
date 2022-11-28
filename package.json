@@ -38,11 +38,9 @@
   },
   "homepage": "https://github.com/miyako/tree-sitter-4dxml#readme",
   "dependencies": {
-    "nan": "^2.14.0",
-    "node-gyp": "^6.1.0",
-    "npm": "^6.14.5",
-    "npm-check-updates": "^6.0.1",
-    "tree-sitter": "^0.16.0"
+    "nan": "^2.17.0",
+    "node-gyp": "^9.0.0",
+    "npm-check-updates": "^13.1.5"
   },
   "devDependencies": {
     "tree-sitter-cli": "^0.16.9"
