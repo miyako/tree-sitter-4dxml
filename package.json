@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-4dxml",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "description": "Atom language support for 4D",
   "main": "index.js",
   "scripts": {
